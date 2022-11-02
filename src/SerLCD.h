@@ -52,6 +52,12 @@
 #define LCD_MOVERIGHT 0x04
 #define LCD_MOVELEFT 0x00
 
+// [abaeyens]
+// Override delays everywhere, they do not appear to be necessary (?)
+// and they slow down everything.
+#define delay( X ); delay(0);
+
+
 class SerLCD : public Print
 {
 
